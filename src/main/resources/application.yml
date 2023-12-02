@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+# Database Configuration
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/alibu_db?useSSL=false&serverTimezone=UTC
+    username: root
+    password: admin
+
+  # Hibernate Configuration
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
